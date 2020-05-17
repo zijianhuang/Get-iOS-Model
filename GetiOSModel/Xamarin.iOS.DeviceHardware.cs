@@ -80,9 +80,9 @@ namespace Xamarin.iOS
                 var v = Version;
                 if (IsSimulator(v))
                 {
-                    return _hardwareMapper.GetModel(SimulatorModel) + " Simulator";
+                    return iOSHardware.GetModel(SimulatorModel) + " Simulator";
                 }
-                return _hardwareMapper.GetModel(v);
+                return iOSHardware.GetModel(v);
             }
         }
 

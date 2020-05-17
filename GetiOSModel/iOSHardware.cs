@@ -15,7 +15,7 @@ namespace Xamarin.iOS
         public iOSChipType GetChipType(string hardware) =>
             _chipTypeMap.GetChipType(hardware);
 
-        public string GetModel(string hardware)
+        public static string GetModel(string hardware)
         {
             // https://support.apple.com/kb/HT3939
             if (hardware.StartsWith("iPhone"))

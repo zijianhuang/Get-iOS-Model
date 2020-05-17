@@ -14,6 +14,17 @@ namespace Xamarin.iOS
 
 	public class DeviceInfoDic: Dictionary<string, DeviceInfo>
 	{
+		//public DeviceInfoDic()
+		//{
+
+		//}
+
+		//public DeviceInfoDic(Dictionary<string, DeviceInfo> dic): base(dic)
+		//{
+
+		//}
+
+
 		public static DeviceInfoDic Create(string jsonContent)
 		{
 			var options = new JsonSerializerOptions();

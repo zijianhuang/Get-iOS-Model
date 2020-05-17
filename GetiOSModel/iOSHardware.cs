@@ -1,8 +1,8 @@
-using Foundation;
+//using Foundation;
 
 namespace Xamarin.iOS
 {
-    [Preserve(AllMembers = true)]
+    //[Preserve(AllMembers = true)]
     class iOSHardware
     {
         private readonly iOSChipTypeMap _chipTypeMap;

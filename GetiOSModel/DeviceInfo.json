@@ -1,0 +1,21 @@
+﻿{
+	"iPhone1,1": {
+		"Chip": "A4",
+		"Model": "iPhone",
+		"Ppi": 132
+	},
+
+	"iPhone1,2": {
+		"Chip": "A4",
+		"Model": "iPhone 3G",
+		"Ppi": 264
+	},
+
+	"iPad11,3": {
+		"Chip": "A10Fusion",
+		"Model": "iPad Air 3 Wi-Fi",
+		"Ppi": 264
+	}
+
+
+}

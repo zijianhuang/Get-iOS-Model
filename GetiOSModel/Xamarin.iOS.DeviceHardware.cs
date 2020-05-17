@@ -5,7 +5,7 @@ using ObjCRuntime;
 
 namespace Xamarin.iOS
 {
-    [Preserve(AllMembers = true)]
+    //[Preserve(AllMembers = true)]
     public static class DeviceHardware
     {
         private const string HardwareProperty = "hw.machine";

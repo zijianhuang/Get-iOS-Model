@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Foundation;
+//using Foundation;
 
 namespace Xamarin.iOS
 {
-    [Preserve(AllMembers = true)]
+    //[Preserve(AllMembers = true)]
     internal class iOSChipTypeMap : Dictionary<string, iOSChipType>
     {
         private readonly Dictionary<string, iOSChipType> modelChipMap;

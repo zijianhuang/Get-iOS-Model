@@ -2,20 +2,513 @@
 	"iPhone1,1": {
 		"Chip": "A4",
 		"Model": "iPhone",
-		"Ppi": 132
+		"SpecUrl": null
 	},
-
 	"iPhone1,2": {
 		"Chip": "A4",
 		"Model": "iPhone 3G",
-		"Ppi": 264
+		"SpecUrl": null
 	},
-
-	"iPad11,3": {
+	"iPhone2,1": {
+		"Chip": "A4",
+		"Model": "iPhone 3GS",
+		"SpecUrl": null
+	},
+	"iPhone3,1": {
+		"Chip": "A4",
+		"Model": "iPhone 4 GSM",
+		"SpecUrl": null
+	},
+	"iPhone3,2": {
+		"Chip": "A4",
+		"Model": "iPhone 4 GSM",
+		"SpecUrl": null
+	},
+	"iPhone3,3": {
+		"Chip": "A4",
+		"Model": "iPhone 4 CDMA",
+		"SpecUrl": null
+	},
+	"iPhone4,1": {
+		"Chip": "A5",
+		"Model": "iPhone 4S",
+		"SpecUrl": null
+	},
+	"iPhone5,1": {
+		"Chip": "A6",
+		"Model": "iPhone 5 GSM",
+		"SpecUrl": null
+	},
+	"iPhone5,2": {
+		"Chip": "A6",
+		"Model": "iPhone 5 Global",
+		"SpecUrl": null
+	},
+	"iPhone5,3": {
+		"Chip": "A6",
+		"Model": "iPhone 5C GSM",
+		"SpecUrl": null
+	},
+	"iPhone5,4": {
+		"Chip": "A6",
+		"Model": "iPhone 5C Global",
+		"SpecUrl": null
+	},
+	"iPhone6,1": {
+		"Chip": "A7",
+		"Model": "iPhone 5S GSM",
+		"SpecUrl": null
+	},
+	"iPhone6,2": {
+		"Chip": "A7",
+		"Model": "iPhone 5S Global",
+		"SpecUrl": null
+	},
+	"iPhone7,1": {
+		"Chip": "A8",
+		"Model": "iPhone 6 Plus",
+		"SpecUrl": null
+	},
+	"iPhone7,2": {
+		"Chip": "A8",
+		"Model": "iPhone 6",
+		"SpecUrl": null
+	},
+	"iPhone8,1": {
+		"Chip": "A9",
+		"Model": "iPhone 6S",
+		"SpecUrl": null
+	},
+	"iPhone8,2": {
+		"Chip": "A9",
+		"Model": "iPhone 6S Plus",
+		"SpecUrl": null
+	},
+	"iPhone8,4": {
+		"Chip": "A9",
+		"Model": "iPhone SE",
+		"SpecUrl": null
+	},
+	"iPhone12,8": {
+		"Chip": "A13Bionic",
+		"Model": "iPhone SE (2nd generation)",
+		"SpecUrl": null
+	},
+	"iPhone9,1": {
 		"Chip": "A10Fusion",
+		"Model": "iPhone 7",
+		"SpecUrl": null
+	},
+	"iPhone9,2": {
+		"Chip": "A10Fusion",
+		"Model": "iPhone 7 Plus",
+		"SpecUrl": null
+	},
+	"iPhone9,3": {
+		"Chip": "A10Fusion",
+		"Model": "iPhone 7",
+		"SpecUrl": null
+	},
+	"iPhone9,4": {
+		"Chip": "A10Fusion",
+		"Model": "iPhone 7 Plus",
+		"SpecUrl": null
+	},
+	"iPhone10,1": {
+		"Chip": "A11Bionic",
+		"Model": "iPhone 8",
+		"SpecUrl": null
+	},
+	"iPhone10,2": {
+		"Chip": "A11Bionic",
+		"Model": "iPhone 8 Plus",
+		"SpecUrl": null
+	},
+	"iPhone10,3": {
+		"Chip": "A11Bionic",
+		"Model": "iPhone X",
+		"SpecUrl": null
+	},
+	"iPhone10,4": {
+		"Chip": "A11Bionic",
+		"Model": "iPhone 8",
+		"SpecUrl": null
+	},
+	"iPhone10,5": {
+		"Chip": "A11Bionic",
+		"Model": "iPhone 8 Plus",
+		"SpecUrl": null
+	},
+	"iPhone10,6": {
+		"Chip": "A11Bionic",
+		"Model": "iPhone X",
+		"SpecUrl": null
+	},
+	"iPhone11,2": {
+		"Chip": "A12Bionic",
+		"Model": "iPhone XS",
+		"SpecUrl": null
+	},
+	"iPhone11,4": {
+		"Chip": "A12Bionic",
+		"Model": "iPhone XS Max",
+		"SpecUrl": null
+	},
+	"iPhone11,6": {
+		"Chip": "A12Bionic",
+		"Model": "iPhone XS Max",
+		"SpecUrl": null
+	},
+	"iPhone11,8": {
+		"Chip": "A12Bionic",
+		"Model": "iPhone XR",
+		"SpecUrl": null
+	},
+	"iPhone12,1": {
+		"Chip": "A13Bionic",
+		"Model": "iPhone 11",
+		"SpecUrl": null
+	},
+	"iPhone12,3": {
+		"Chip": "A13Bionic",
+		"Model": "iPhone 11 Pro",
+		"SpecUrl": null
+	},
+	"iPhone12,5": {
+		"Chip": "A13Bionic",
+		"Model": "iPhone 11 Pro Max",
+		"SpecUrl": null
+	},
+	"iPad1,1": {
+		"Chip": "A4",
+		"Model": "iPad",
+		"SpecUrl": null
+	},
+	"iPad2,1": {
+		"Chip": "A5",
+		"Model": "iPad 2 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad2,2": {
+		"Chip": "A5",
+		"Model": "iPad 2 GSM",
+		"SpecUrl": null
+	},
+	"iPad2,3": {
+		"Chip": "A5",
+		"Model": "iPad 2 CDMA",
+		"SpecUrl": null
+	},
+	"iPad2,4": {
+		"Chip": "A5",
+		"Model": "iPad 2 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad2,5": {
+		"Chip": "A5",
+		"Model": "iPad mini Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad2,6": {
+		"Chip": "A5",
+		"Model": "iPad mini Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad2,7": {
+		"Chip": "A5",
+		"Model": "iPad mini Wi-Fi + Cellular (MM)",
+		"SpecUrl": null
+	},
+	"iPad3,1": {
+		"Chip": "A5",
+		"Model": "iPad 3 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad3,2": {
+		"Chip": "A5",
+		"Model": "iPad 3 Wi-Fi + Cellular (VZ)",
+		"SpecUrl": null
+	},
+	"iPad3,3": {
+		"Chip": "A5X",
+		"Model": "iPad 3 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad3,4": {
+		"Chip": "A6X",
+		"Model": "iPad 4 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad3,5": {
+		"Chip": "A6X",
+		"Model": "iPad 4 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad3,6": {
+		"Chip": "A6X",
+		"Model": "iPad 4 Wi-Fi + Cellular (MM)",
+		"SpecUrl": null
+	},
+	"iPad4,1": {
+		"Chip": "A7",
+		"Model": "iPad Air Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad4,2": {
+		"Chip": "A7",
+		"Model": "iPad Air Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad4,3": {
+		"Chip": "A7",
+		"Model": "iPad Air Wi-Fi + Cellular (TD-LTE)",
+		"SpecUrl": null
+	},
+	"iPad4,4": {
+		"Chip": "A7",
+		"Model": "iPad mini 2 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad4,5": {
+		"Chip": "A7",
+		"Model": "iPad mini 2 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad4,6": {
+		"Chip": "A7",
+		"Model": "iPad mini 2 Wi-Fi + Cellular (TD-LTE)",
+		"SpecUrl": null
+	},
+	"iPad4,7": {
+		"Chip": "A7",
+		"Model": "iPad mini 3 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad4,8": {
+		"Chip": "A7",
+		"Model": "iPad mini 3 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad4,9": {
+		"Chip": "A7",
+		"Model": "iPad mini 3 Wi-Fi + Cellular (TD-LTE)",
+		"SpecUrl": null
+	},
+	"iPad5,1": {
+		"Chip": "A8",
+		"Model": "iPad mini 4",
+		"SpecUrl": null
+	},
+	"iPad5,2": {
+		"Chip": "A8",
+		"Model": "iPad mini 4 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad5,3": {
+		"Chip": "A8X",
+		"Model": "iPad Air 2 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad5,4": {
+		"Chip": "A8X",
+		"Model": "iPad Air 2 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad6,3": {
+		"Chip": "A9X",
+		"Model": "iPad Pro (9.7-inch)",
+		"SpecUrl": null
+	},
+	"iPad6,4": {
+		"Chip": "A9X",
+		"Model": "iPad Pro (9.7-inch) Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad6,7": {
+		"Chip": "A9X",
+		"Model": "iPad Pro 12.9-inch",
+		"SpecUrl": null
+	},
+	"iPad6,8": {
+		"Chip": "A9X",
+		"Model": "iPad Pro 12.9-inch Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad6,11": {
+		"Chip": "A9",
+		"Model": "iPad 5 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad6,12": {
+		"Chip": "A9",
+		"Model": "iPad 5 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad7,1": {
+		"Chip": "A10XFusion",
+		"Model": "iPad Pro 12.9-inch (2nd generation)",
+		"SpecUrl": null
+	},
+	"iPad7,2": {
+		"Chip": "A10XFusion",
+		"Model": "iPad Pro 12.9-inch (2nd generation) Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad7,3": {
+		"Chip": "A10XFusion",
+		"Model": "iPad Pro (10.5-inch)",
+		"SpecUrl": null
+	},
+	"iPad7,4": {
+		"Chip": "A10XFusion",
+		"Model": "iPad Pro (10.5-inch) Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad7,5": {
+		"Chip": "A10Fusion",
+		"Model": "iPad 6 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad7,6": {
+		"Chip": "A10Fusion",
+		"Model": "iPad 6 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad7,11": {
+		"Chip": "A10Fusion",
+		"Model": "iPad 7 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad7,12": {
+		"Chip": "A10Fusion",
+		"Model": "iPad 7 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad8,1": {
+		"Chip": "A12XBionic",
+		"Model": "iPad Pro 11-inch",
+		"SpecUrl": null
+	},
+	"iPad8,2": {
+		"Chip": "A12XBionic",
+		"Model": "iPad Pro 11-inch",
+		"SpecUrl": null
+	},
+	"iPad8,3": {
+		"Chip": "A12XBionic",
+		"Model": "iPad Pro 11-inch Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad8,4": {
+		"Chip": "A12XBionic",
+		"Model": "iPad Pro 11-inch Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad8,9": {
+		"Chip": "A12ZBionic",
+		"Model": "iPad Pro 11-inch (2nd generation)",
+		"SpecUrl": null
+	},
+	"iPad8,10": {
+		"Chip": "A12ZBionic",
+		"Model": "iPad Pro 11-inch (2nd generation) Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad8,5": {
+		"Chip": "A12XBionic",
+		"Model": "iPad Pro 12.9-inch (3rd generation)",
+		"SpecUrl": null
+	},
+	"iPad8,6": {
+		"Chip": "A12XBionic",
+		"Model": "iPad Pro 12.9-inch (3rd generation)",
+		"SpecUrl": null
+	},
+	"iPad8,7": {
+		"Chip": "A12XBionic",
+		"Model": "iPad Pro 12.9-inch (3rd generation Wi-Fi + Cellular)",
+		"SpecUrl": null
+	},
+	"iPad8,8": {
+		"Chip": "A12XBionic",
+		"Model": "iPad Pro 12.9-inch (3rd generation Wi-Fi + Cellular)",
+		"SpecUrl": null
+	},
+	"iPad8,11": {
+		"Chip": "A12ZBionic",
+		"Model": "iPad Pro 12.9-inch (4th generation)",
+		"SpecUrl": null
+	},
+	"iPad8,12": {
+		"Chip": "A12ZBionic",
+		"Model": "iPad Pro 12.9-inch (4th generation Wi-Fi + Cellular)",
+		"SpecUrl": null
+	},
+	"iPad11,1": {
+		"Chip": "A12Bionic",
+		"Model": "iPad mini 5 Wi-Fi",
+		"SpecUrl": null
+	},
+	"iPad11,2": {
+		"Chip": "A12Bionic",
+		"Model": "iPad mini 5 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPad11,3": {
+		"Chip": "A12Bionic",
 		"Model": "iPad Air 3 Wi-Fi",
-		"Ppi": 264
+		"SpecUrl": null
+	},
+	"iPad11,4": {
+		"Chip": "A12Bionic",
+		"Model": "iPad Air 3 Wi-Fi + Cellular",
+		"SpecUrl": null
+	},
+	"iPod1,1": {
+		"Chip": "A4",
+		"Model": "iPod touch",
+		"SpecUrl": null
+	},
+	"iPod2,1": {
+		"Chip": "A4",
+		"Model": "iPod touch 2G",
+		"SpecUrl": null
+	},
+	"iPod3,1": {
+		"Chip": "A4",
+		"Model": "iPod touch 3G",
+		"SpecUrl": null
+	},
+	"iPod4,1": {
+		"Chip": "A4",
+		"Model": "iPod touch 4G",
+		"SpecUrl": null
+	},
+	"iPod5,1": {
+		"Chip": "A5",
+		"Model": "iPod touch 5G",
+		"SpecUrl": null
+	},
+	"iPod7,1": {
+		"Chip": "A8",
+		"Model": "iPod touch 6G",
+		"SpecUrl": null
+	},
+	"iPod9,1": {
+		"Chip": "A10Fusion",
+		"Model": "iPod touch 7G",
+		"SpecUrl": null
+	},
+	"i386": {
+		"Chip": "Unknown",
+		"Model": "Simulator"
+	},
+	"x86_64": {
+		"Chip": "Unknown",
+		"Model": "Simulator"
+	},
+	"": {
+		"Chip": "Unknown",
+		"Model": "Unknown"
 	}
-
-
 }

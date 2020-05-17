@@ -19,28 +19,40 @@ namespace BasicTests
 			var iPhoneInfo = dic["iPhone1,1"];
 			Assert.Equal("iPhone", iPhoneInfo.Model);
 			Assert.Equal(iOSChipType.A4, iPhoneInfo.Chip);
-			Assert.Equal(132, iPhoneInfo.Ppi);
+
+			var iPadInfo = dic["iPad8,12"];
+			Assert.Equal("iPad Pro 12.9-inch (4th generation Wi-Fi + Cellular)", iPadInfo.Model);
+			Assert.Equal(iOSChipType.A12ZBionic, iPadInfo.Chip);
 		}
 
 		[Fact]
-		public async Task MigrateCodeToJson()
+		public void TestDeviceInfoLookupEmpty()
 		{
-			var chipTypeMap = new iOSChipTypeMap();
-			var allIds = chipTypeMap.Keys.ToArray();
-			var deviceInfoDictionary = allIds.ToDictionary<string, string, DeviceInfo>(id => id, (id) => new DeviceInfo()
-			{
-				Model = iOSHardware.GetModel(id),
-				Chip = chipTypeMap.GetChipType(id),
-				Ppi = DevicePpi.GetPpi(id),
-			}
-			);
+			var dic = DeviceInfoDic.Create();
+			var iPhoneInfo = dic[""];
+			Assert.Equal("Unknown", iPhoneInfo.Model);
+			Assert.Equal(iOSChipType.Unknown, iPhoneInfo.Chip);
 
-			using (var stream = new FileStream("migrate.json", FileMode.Create, FileAccess.Write))
-			{
-				var options = new JsonSerializerOptions() { WriteIndented = true };
-				options.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
-				await JsonSerializer.SerializeAsync<Dictionary<string, DeviceInfo>>(stream, deviceInfoDictionary, options);
-			}
 		}
+
+		//[Fact]
+		//public async Task MigrateCodeToJson()
+		//{
+		//	var chipTypeMap = new iOSChipTypeMap();
+		//	var allIds = chipTypeMap.Keys.ToArray();
+		//	var deviceInfoDictionary = allIds.ToDictionary<string, string, DeviceInfo>(id => id, (id) => new DeviceInfo()
+		//	{
+		//		Model = iOSHardware.GetModel(id),
+		//		Chip = chipTypeMap.GetChipType(id),
+		//	}
+		//	);
+
+		//	using (var stream = new FileStream("migrate.json", FileMode.Create, FileAccess.Write))
+		//	{
+		//		var options = new JsonSerializerOptions() { WriteIndented = true };
+		//		options.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
+		//		await JsonSerializer.SerializeAsync<Dictionary<string, DeviceInfo>>(stream, deviceInfoDictionary, options);
+		//	}
+		//}
 	}
 }

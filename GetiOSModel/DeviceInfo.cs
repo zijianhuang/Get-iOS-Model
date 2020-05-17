@@ -8,7 +8,6 @@ namespace Xamarin.iOS
 	{
 		public iOSChipType Chip { get; set; }
 		public string Model { get; set; }
-		public int Ppi { get; set; }
 		public string SpecUrl { get; set; }
 	}
 

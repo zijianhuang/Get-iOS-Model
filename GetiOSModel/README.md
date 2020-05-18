@@ -43,6 +43,14 @@ Updates:<br/>
 20140108 - added iPad Mini Retina and iPad Air<br/>
 *******
 
+## Changes in Fork
+
+1. Simplify code structure, with DeviceInfo.json replacing if-ten and dictionary, so updating the mapping will be just updating the JSON file while the programming interfaces remain the same to Xamarin App developers.
+2. The mapping could be used in a lookup Web service in addition to iOS app.
+
+**Remarks**
+DotNet has poor support for NuGet with content files, while there are a few workarounds like this one at https://weblog.west-wind.com/posts/2018/Jan/29/Distributing-Content-and-Showing-a-ReadMe-file-in-a-NET-Core-Nuget-Package.
+
 ## Install
 
 #### [NuGet Gallery](https://www.nuget.org/packages/dannycabrera.GetiOSModel)

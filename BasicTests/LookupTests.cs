@@ -13,9 +13,9 @@ namespace BasicTests
 	public class LookupTests
 	{
 		[Fact]
-		public void TestDeviceInfoLookup()
+		public void TestModelInfoLookup()
 		{
-			var dic = DeviceInfoDic.Create();
+			var dic = ModelInfoDic.Create();
 			var iPhoneInfo = dic["iPhone1,1"];
 			Assert.Equal("iPhone", iPhoneInfo.Model);
 			Assert.Equal(iOSChipType.A4, iPhoneInfo.Chip);
@@ -26,15 +26,16 @@ namespace BasicTests
 		}
 
 		[Fact]
-		public void TestDeviceInfoLookupEmpty()
+		public void TestModelInfoLookupEmpty()
 		{
-			var dic = DeviceInfoDic.Create();
+			var dic = ModelInfoDic.Create();
 			var iPhoneInfo = dic[""];
 			Assert.Equal("Unknown", iPhoneInfo.Model);
 			Assert.Equal(iOSChipType.Unknown, iPhoneInfo.Chip);
 
 		}
 
+		//Used for migrating codes in iOSChiptypeMap and iOS Hardware to a JSON file.
 		//[Fact]
 		//public async Task MigrateCodeToJson()
 		//{

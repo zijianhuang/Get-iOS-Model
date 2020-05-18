@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <Import Project="..\iOSDeviceShared\iOSDeviceShared.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <Content Include="..\GetiOSModel\Resources\ModelInfo.json" Link="ModelInfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

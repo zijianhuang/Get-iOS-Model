@@ -17,7 +17,7 @@ namespace Xamarin.iOS
 												IntPtr newp,
 												uint newlen);
 
-		private static readonly DeviceInfoDic dic = DeviceInfoDic.Create();
+		private static readonly ModelInfoDic dic = ModelInfoDic.Create();
 		private static readonly Lazy<string> _version = new Lazy<string>(FindVersion);
 
 		private static string FindVersion()
@@ -69,7 +69,7 @@ namespace Xamarin.iOS
 				hardwareId = SimulatorModel;
 			}
 
-			var info = GetDeviceInfo(hardwareId);
+			var info = dic.GetDeviceInfo(hardwareId);
 			return info.Chip;
 		}
 
@@ -77,7 +77,7 @@ namespace Xamarin.iOS
 
 		public static string GetModel(string hardwareId)
 		{
-			DeviceInfo info;
+			ModelInfo info;
 			if (IsSimulator(hardwareId))
 			{
 				if (dic.TryGetValue(SimulatorModel, out info))
@@ -94,22 +94,6 @@ namespace Xamarin.iOS
 			return "Unknown";
 		}
 
-		/// <summary>
-		/// According to hardwareId, return model and chip type.
-		/// </summary>
-		/// <param name="hardwareId"></param>
-		/// <returns>DeviceInfo</returns>
-		/// <remarks>This function does not care about simulator.</remarks>
-		static DeviceInfo GetDeviceInfo(string hardwareId)
-		{
-			DeviceInfo info;
-			if (dic.TryGetValue(hardwareId, out info))
-			{
-				return info;
-			}
-
-			return dic[""];//Unknown
-		}
 
 		private static bool IsSimulator(string v) => v == "i386" || v == "x86_64";
 

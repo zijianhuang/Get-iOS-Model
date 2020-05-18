@@ -83,7 +83,6 @@
     <BundleResource Include="Resources\ModelInfo.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
-    <None Include="README.md" />
     <None Include="LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
     <None Include="packages.config" />
   </ItemGroup>

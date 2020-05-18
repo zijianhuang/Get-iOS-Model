@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicTests", "BasicTests\Ba
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "iOSDeviceShared", "iOSDeviceShared\iOSDeviceShared.shproj", "{D079D2F1-E336-425B-811D-272C13DAD9BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetiOSModelCore", "GetiOSModelCore\GetiOSModelCore.csproj", "{F53AB23F-A9D8-4521-AD8B-1F7395A90BB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetiOSModelCore", "GetiOSModelCore\GetiOSModelCore.csproj", "{F53AB23F-A9D8-4521-AD8B-1F7395A90BB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{201727D4-BB95-4957-A935-96A7564580C3}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

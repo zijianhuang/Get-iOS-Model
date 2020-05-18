@@ -5,11 +5,13 @@ using ObjCRuntime;
 
 namespace Xamarin.iOS
 {
-	//[Preserve(AllMembers = true)]
+	[Preserve(AllMembers = true)]
 	public static class DeviceHardware
 	{
 		private const string HardwareProperty = "hw.machine";
 
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA2101:SpecifyMarshalingForPInvokeStringArguments", MessageId = "0")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1060:MovePInvokesToNativeMethodsClass")]
 		[DllImport(Constants.SystemLibrary)]
 		private static extern int sysctlbyname([MarshalAs(UnmanagedType.LPStr)] string property,
 												IntPtr output,
@@ -17,9 +19,26 @@ namespace Xamarin.iOS
 												IntPtr newp,
 												uint newlen);
 
-		private static readonly ModelInfoDic dic = ModelInfoDic.Create();
-		private static readonly Lazy<string> _version = new Lazy<string>(FindVersion);
+		private static readonly ModelInfoDic dic = LoadModelInfoDic();
 
+		static ModelInfoDic LoadModelInfoDic()
+		{
+			var bundlePath = NSBundle.MainBundle.BundlePath;
+			var filename = System.IO.Path.Combine(bundlePath, "ModelInfo.json");
+			try
+			{
+				var s = System.IO.File.ReadAllText(filename);
+				return ModelInfoDic.Create(s);
+
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.ToString());
+				throw;
+			}
+		}
+
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2149:TransparentMethodsMustNotCallNativeCodeFxCopRule")]
 		private static string FindVersion()
 		{
 			try
@@ -58,35 +77,54 @@ namespace Xamarin.iOS
 			return "Unknown";
 		}
 
+		/// <summary>
+		/// Version could be i386 or x86_64 when running in simulators, otherwise, device model identifier.
+		/// </summary>
 		public static string Version => FindVersion();
+
+		/// <summary>
+		/// iOS device model identifier
+		/// </summary>
+		public static string ModelIdentifier
+		{
+			get
+			{
+				var v = Version;
+
+				if (v == "i386" || v == "x86_64")
+				{
+					var nsDic = NSProcessInfo.ProcessInfo.Environment["SIMULATOR_MODEL_IDENTIFIER"];
+					return nsDic.ToString();
+				}
+				else
+				{
+					return v;
+				}
+			}
+		}
 
 		public static iOSChipType ChipType => GetChipType(Version);
 
-		public static iOSChipType GetChipType(string hardwareId)
+		public static iOSChipType GetChipType(string modelIdentifier)
 		{
-			if (IsSimulator(hardwareId))
-			{
-				hardwareId = SimulatorModel;
-			}
-
-			var info = dic.GetDeviceInfo(hardwareId);
+			var info = dic.GetDeviceInfo(modelIdentifier);
 			return info.Chip;
 		}
 
-		public static string Model => GetModel(Version);
+		public static string Model => GetModel(ModelIdentifier);
 
-		public static string GetModel(string hardwareId)
+		public static string GetModel(string modelIdentifier)
 		{
 			ModelInfo info;
-			if (IsSimulator(hardwareId))
+			if (IsSimulator(Version))
 			{
-				if (dic.TryGetValue(SimulatorModel, out info))
+				if (dic.TryGetValue(modelIdentifier, out info))
 				{
 					return info.Model + " Simulator";
 				}
 			}
 
-			if (dic.TryGetValue(hardwareId, out info))
+			if (dic.TryGetValue(modelIdentifier, out info))
 			{
 				return info.Model;
 			}
@@ -96,7 +134,5 @@ namespace Xamarin.iOS
 
 
 		private static bool IsSimulator(string v) => v == "i386" || v == "x86_64";
-
-		private static string SimulatorModel => NSProcessInfo.ProcessInfo.Environment["SIMULATOR_MODEL_IDENTIFIER"].ToString();
 	}
 }
